@@ -1,0 +1,23 @@
+<div class="app">
+  <h1>
+    Test Task for Scal.io
+  </h1>
+
+  <div class="buttons inline column">
+    <div class="inline middle row">
+      <button (click)="onNextRoute(['route-one'])">route-one</button>
+      <button (click)="onNextRoute(['route-one', 'sub-route'])">route-one/sub-route</button>
+    </div>
+
+    <div class="inline middle row">
+      <button (click)="onNextRoute(['route-two'])">route-two</button>
+      <button (click)="onNextRoute(['route-two', 'sub-route'])">route-two/sub-route</button>
+    </div>
+  </div>
+
+  <div class="routes">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
